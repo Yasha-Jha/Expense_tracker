@@ -1,0 +1,253 @@
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300;400;500;600;700&family=Jost:wght@200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #405d72;
+  --secondary-color: #fa0101;
+  --background-color: #fff6ff;
+  --text-color: #fff;
+  --text-secondary-color: #468585;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.main_div {
+  box-shadow: 5px 5px 10px 5px var(--primary-color);
+  background-color: #fff;
+  padding: 3rem 5rem;
+}
+
+h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h1 .head_font {
+  font-size: 60px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+input {
+  height: 2rem;
+}
+#add-expense-btn {
+  height: 2rem;
+  padding: 0 0.5rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+#add-expense-btn:hover {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border-radius: 20px;
+  text-align: center;
+}
+
+table thead {
+  background-color: var(--primary-color);
+}
+
+.head-tr th {
+  padding: 1rem 1rem;
+}
+
+table tbody td {
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid #405d72;
+}
+
+.delete-btn {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 13px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--secondary-color);
+}
+
+.delete-btn:hover {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+}
+
+.total_amount {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: end;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300;400;500;600;700&family=Jost:wght@200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #405d72;
+  --secondary-color: #fa0101;
+  --background-color: #fff6ff;
+  --text-color: #fff;
+  --text-secondary-color: #468585;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.main_div {
+  box-shadow: 5px 5px 10px 5px var(--primary-color);
+  background-color: #fff;
+  padding: 3rem 5rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h1 .head_font {
+  font-size: 60px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+input {
+  height: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+button {
+  height: 2rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border-radius: 20px;
+  text-align: center;
+}
+
+table thead {
+  background-color: var(--primary-color);
+}
+
+.head-tr th {
+  padding: 1rem 1rem;
+}
+
+table tbody td {
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid #405d72;
+}
+
+.delete-btn {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 13px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--secondary-color);
+}
+
+.delete-btn:hover {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+}
+
+.total_amount {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: end;
+}
+
+/* New Styles */
+.overview {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--primary-color);
+}
+
+.overview h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.overview p {
+  font-size: 18px;
+  margin: 0.5rem 0;
+}
+
+.adding_salary,
+.adding_income,
+.adding_expense {
+  margin-bottom: 2rem;
+}
+
+.emoji {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 1rem;
+}

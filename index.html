@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="main_div">
+      <h1>
+        <span class="head_font">𝕰</span>xpense
+        <span class="head_font">₸</span>racker
+      </h1>
+
+      <div class="adding_expense">
+        <form onsubmit="event.preventDefault();">
+          <input type="text" placeholder="Expense Name" id="expense-name" />
+          <input
+            type="number"
+            placeholder="Expense Amount"
+            id="expense-amount"
+          />
+          <button type="submit" id="add-expense-btn">Add Expense</button>
+         
+        </form>
+      </div>
+
+      <div class="main_container">
+        <table>
+          <thead>
+            <tr class="head-tr">
+              <th>Expense Name</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="expense-list"></tbody>
+        </table>
+        <div class="total_amount">
+          <p id="para_total_amount">
+            Total: Rs.<span id="total-amount">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="main_div">
+      <h1>
+        <span class="head_font">𝕰</span>xpense
+        <span class="head_font">₸</span>racker
+      </h1>
+
+      <div class="adding_salary">
+        <form onsubmit="event.preventDefault(); addSalary();">
+          <input
+            type="number"
+            placeholder="Enter Your Salary"
+            id="salary-amount"
+            required
+          />
+          <button type="submit" id="add-salary-btn">Add Salary</button>
+        </form>
+      </div>
+
+      <div class="adding_expense">
+        <form onsubmit="event.preventDefault(); addExpense();">
+          <input
+            type="text"
+            placeholder="Expense Name"
+            id="expense-name"
+            required
+          />
+          <input
+            type="number"
+            placeholder="Expense Amount"
+            id="expense-amount"
+            required
+          />
+          <button type="submit" id="add-expense-btn">Add Expense</button>
+        </form>
+      </div>
+
+      <div class="main_container">
+        <table>
+          <thead>
+            <tr class="head-tr">
+              <th>Expense Name</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="expense-list"></tbody>
+        </table>
+        <div class="total_amount">
+          <p id="para_total_amount">
+            Total: Rs.<span id="total-amount">0</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="overview">
+        <h2>Overview</h2>
+        <p>Total Salary: Rs.<span id="total-salary">0</span></p>
+        <p>Total Expenses: Rs.<span id="total-expenses-overview">0</span></p>
+        <p>Net Savings: Rs.<span id="net-savings">0</span></p>
+        <div id="emoji-indicator"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
